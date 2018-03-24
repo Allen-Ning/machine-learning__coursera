@@ -34,14 +34,5 @@ end
 
 % linear regression
 function l = l(theta, x)
-  l = 0
-  for k = 1 : length(theta)
-    l +=  theta(k) * x(k)
-  end
+  l = x * theta
 end
-
-% sigmoid
-%function g = g(z)
-%  g = 1 ./ ( 1 + exp(-z) )
-%end
-
